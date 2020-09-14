@@ -1,4 +1,4 @@
-// Qtum offline staking contract v0.1
+// SICash offline staking contract v0.1
 
 pragma solidity ^0.5.11;
 
@@ -84,7 +84,7 @@ contract Delegations{
 
 	function verifyPoD(bytes memory _PoD, address _staker, address _delegate) internal view returns (bool){
 
-		bytes memory prefix = "\x15Qtum Signed Message:\n\x28";
+		bytes memory prefix = "\x15SICash Signed Message:\n\x28";
 		bytes memory message = toASCIIString(_staker);
 
 		uint8 v = toUint8(slice(_PoD,0,1),0);
