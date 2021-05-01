@@ -1,1 +1,1 @@
-#Qtum Offline Staking Solidity contract
+#SICash Offline Staking Solidity contract
